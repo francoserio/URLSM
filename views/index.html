@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>URL Shortener Microservice</title>
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+	      <div class="container">
+	        <h1>User Stories:</h1>
+	        <blockquote>
+		        <ul>
+		        	<li>
+		        		<p>
+		        			I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+		        		</p>
+		        	</li>
+		        	<li>
+		        		<p>
+		        			If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
+		        		</p>
+		        	</li>
+		        	<li>
+		        		<p>
+		        			When I visit that shortened URL, it will redirect me to my original link.
+		        		</p>
+		        	</li>
+		        </ul>
+	        </blockquote>
+	      </div>
+	      <div>
+	      	<h2>
+	      		Example usage:
+	      	</h2>
+	      	<p>
+	      		https://little-url.herokuapp.com/new/https://www.google.com
+	      		<br />
+				https://little-url.herokuapp.com/new/http://foo.com:80
+	      	</p>
+	      	<h2>
+	      		Example output:
+	      	</h2>
+	      	<p>
+	      		{ "original_url":"http://foo.com:80", "short_url":"https://little-url.herokuapp.com/8170" }
+	      	</p>
+	      	<h2>
+	      		Function:
+	      	</h2>
+	      	<p>
+	      		https://little-url.herokuapp.com/8170 will redirect to foo.com:80
+	      	</p>
+	      </div>
+	</body>
+</html>
