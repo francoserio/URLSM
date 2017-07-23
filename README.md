@@ -1,2 +1,0 @@
-# URLSM
-URL shortener microservice
