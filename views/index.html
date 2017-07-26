@@ -1,7 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<title>URL Shortener Microservice</title>
-		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="/favicon.ico" />
 	</head>
 	<body>
 	      <div class="container">
@@ -10,12 +12,12 @@
 		        <ul>
 		        	<li>
 		        		<p>
-		        			I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+		        			I can pass a URL and I will receive a shortened URL in the JSON response.
 		        		</p>
 		        	</li>
 		        	<li>
 		        		<p>
-		        			If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
+		        			If I pass an invalid URL that doesn't follow the valid http://example.com format, the JSON response will contain an error instead.
 		        		</p>
 		        	</li>
 		        	<li>
@@ -31,21 +33,21 @@
 	      		Example usage:
 	      	</h2>
 	      	<p>
-	      		https://little-url.herokuapp.com/new/https://www.google.com
+	      		https://localhost:3000/new/https://google.com
 	      		<br />
-				https://little-url.herokuapp.com/new/http://foo.com:80
+				https://localhost:3000/new/http://foo.com:80
 	      	</p>
 	      	<h2>
 	      		Example output:
 	      	</h2>
 	      	<p>
-	      		{ "original_url":"http://foo.com:80", "short_url":"https://little-url.herokuapp.com/8170" }
+	      		{ "original_url":"https://google.com", "short_url":"https://localhost:3000/8170" }
 	      	</p>
 	      	<h2>
 	      		Function:
 	      	</h2>
 	      	<p>
-	      		https://little-url.herokuapp.com/8170 will redirect to foo.com:80
+	      		https://localhost:3000/8170 will redirect to https://google.com
 	      	</p>
 	      </div>
 	</body>
