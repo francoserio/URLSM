@@ -51,6 +51,7 @@ app.get('/new/:url(*)', function(req, res) {
 								});
 							} else {
 								//it is the first item inserted
+								var newUrlNumber = 1;
 								var webpage = {
 									originalUrl: req.params['url'],
 									newUrl: newUrlNumber
